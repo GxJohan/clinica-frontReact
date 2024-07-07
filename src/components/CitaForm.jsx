@@ -1,6 +1,4 @@
-// src/components/CitaForm.jsx
 import React, { useState, useEffect } from 'react';
-//comentario
 
 const CitaForm = ({ onSubmit, citaToEdit, pacientes, dentistas }) => {
     const [cita, setCita] = useState({
@@ -13,7 +11,12 @@ const CitaForm = ({ onSubmit, citaToEdit, pacientes, dentistas }) => {
 
     useEffect(() => {
         if (citaToEdit) {
-            setCita(citaToEdit);
+            setCita({
+                ...citaToEdit,
+                pacienteId: citaToEdit.paciente.id,
+                dentistaId: citaToEdit.dentista.id,
+                fechaHora: citaToEdit.fechaHora.slice(0, 16) // Formato YYYY-MM-DDTHH:mm
+            });
         }
     }, [citaToEdit]);
 
