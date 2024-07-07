@@ -1,5 +1,6 @@
 // src/components/CitaForm.jsx
 import React, { useState, useEffect } from 'react';
+//comentario
 
 const CitaForm = ({ onSubmit, citaToEdit, pacientes, dentistas }) => {
     const [cita, setCita] = useState({
