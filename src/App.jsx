@@ -7,7 +7,7 @@ import Citas from './pages/Citas';
 
 function App() {
     return (
-        <Router basename="/dentalapp">
+        <Router basename={import.meta.env.VITE_APP_BASE_PATH}>
             <div className="App">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container-fluid">
