@@ -7,7 +7,7 @@ import Citas from './pages/Citas';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/dentalapp">
             <div className="App">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container-fluid">
