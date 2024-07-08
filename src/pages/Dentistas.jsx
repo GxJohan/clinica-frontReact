@@ -4,7 +4,7 @@ import axios from 'axios';
 import DentistaForm from '../components/DentistaForm';
 import DentistaTable from '../components/DentistaTable';
 
-const API_URL = 'http://localhost:8080/clinicadental/dentistas';
+const API_URL = `${import.meta.env.VITE_API_URL}/dentistas`;
 
 function Dentistas() {
     const [dentistas, setDentistas] = useState([]);

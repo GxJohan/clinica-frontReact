@@ -3,7 +3,7 @@ import axios from 'axios';
 import PacienteForm from '../components/PacienteForm';
 import PacienteTable from '../components/PacienteTable';
 
-const API_URL = 'http://localhost:8080/clinicadental/pacientes';
+const API_URL = `${import.meta.env.VITE_API_URL}/pacientes`;
 
 function App() {
     const [pacientes, setPacientes] = useState([]);

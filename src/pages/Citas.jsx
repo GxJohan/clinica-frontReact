@@ -3,7 +3,7 @@ import axios from 'axios';
 import CitaForm from '../components/CitaForm';
 import CitaTable from '../components/CitaTable';
 
-const API_URL = 'http://localhost:8080/clinicadental';
+const API_URL = `${import.meta.env.VITE_API_URL}`;
 
 function Citas() {
     const [citas, setCitas] = useState([]);
